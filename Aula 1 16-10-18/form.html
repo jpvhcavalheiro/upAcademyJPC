@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>A minha primeira form</h1>
+    <form action="">
+        <label for="InputFirstName">Primeiro Nome: </label>
+        <Input required id="InputFirstName" type="FirstName" placeholder="Ponha o seu primeiro nome">
+        <br>
+        <br>
+        <label for="InputLastName">Último Nome: </label>
+        <Input id="InputLastName" type="LastName" placeholder="Ponha o seu último nome">
+        <br>
+        <br>
+        <label for="InputEmail">Email: </label>
+        <input required id="InputEmail" type="email" placeholder="Ponha o seu email">
+        <br>
+        <br>
+        <label for="InputPassword">Password: </label>
+        <input required minlength="6" id="InputPassword" type="password" placeholder="Ponha o seu password">
+        <br>
+        <br>
+        <label>Sexo:</label> 
+        <br>
+        <input type="radio" name="gender" value="masculino" checked> Masculino
+        <br>
+        <input type="radio" name="gender" value="feminino"> Feminino
+        <br>
+        <input type="radio" name="gender" value="Outro"> Outro
+        <br>
+        <br>
+        <label>Clube:</label>
+        <br>
+        <select>
+            <option value="Benfica">Benfica</option>
+            <option value="Porto">Porto</option>
+            <option value="Sporting">Sporting</option>
+        </select>
+        <br>
+        <br>
+        <input required type="checkbox" name="concordancia" value="Concoordo com os termos">Li e concordo com os termos
+        <br>
+        <br>
+        <button type="submit">Submeter</button>
+    </form>
+</body>
+</html>

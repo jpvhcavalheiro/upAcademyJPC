@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+
+</head>
+
+<body>
+
+    <p id="demo">Fazer debug! Deu ERRO!</p>
+
+    <script>
+        var text = ""
+        var index = 0
+        while (index < 40) {
+            if (index % 5 == 0 && index % 3 == 0) {
+                text += "FizzBuzz" + "<br>";
+            } else if (index % 5 == 0) {
+                text += "Buzz" + "<br>";
+            } else if (index % 3 == 0) {
+                text += "Fizz" + "<br>";
+            } else {
+                text += index + "<br>";
+            }
+
+            index++
+        }
+        document.getElementById("demo").innerHTML = text
+
+
+
+    </script>
+    <!-- O programa deve executar um loop com 40 ciclos, 
+    que deve fazer print na consola Buzz se o número do ciclo em que está for múltiplo 5, 
+    Fizz se for multiplo de 3 e 
+    FizzBuzz se for multiplo de 3 e de 5. Se nao for multiplo de 3 nem de 5, faz prin =t do proprio numero -->
+</body>
+
+</html>

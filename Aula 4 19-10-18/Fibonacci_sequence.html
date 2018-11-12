@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+
+</head>
+
+<body>
+
+    <p id="demo">Fazer debug! Deu ERRO!</p>
+
+    <script>
+        var text = ""
+        var index = 0
+        var currentseq = 0
+        var previousseq = 0
+        var antepreviousseq = 0
+        while (index < 60) {
+            if (index == 0) {
+                antepreviousseq = 0
+                text += "0" + "<br>"
+            } else if (index == 1) {
+                previousseq = 1
+                text += "1" + "<br>"
+            } else {
+                currentseq = antepreviousseq + previousseq
+                antepreviousseq = previousseq
+                previousseq = currentseq
+                text += currentseq + "<br>"
+            }
+            index++
+        }
+        document.getElementById("demo").innerHTML = text
+
+
+
+    </script>
+    <!-- O programa deve executar um loop com 60 ciclos com a sequencia de fibonacci -->
+</body>
+
+</html>
